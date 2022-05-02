@@ -1,0 +1,289 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Fin Reset */
+
+/* Html */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Fin Html */
+
+/*-------------------------------------- Mobile -------------------------------------*/
+
+    /* Body */
+
+    .body-container {  
+        margin: 10px 20px 5px 20px;        
+        background-color: #eee;
+    }
+
+    .grid-container {       
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }     
+
+    /* Fin Body */
+
+    /* Header */
+
+    .header-container {
+        margin: 4px 0 15px 0;
+        padding: 4px 10px 3px 10px;
+        border: 5px rgb(231, 178, 231) ridge;
+        border-style: outset;
+        border-radius: 3px;
+        border-width: 4px;
+        background-color: #DFFEFC;
+        display: grid;
+        grid-area: header;
+    }
+
+    .title{
+        text-align: center;
+        color: rgb(151, 70, 161);
+        text-shadow: 3px 3px 3px rgb(212, 164, 182);
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .caption{
+        text-align: center;
+        color:gray;
+        font-size: 30px;
+    }
+
+    .nav{
+        margin: 5px 50px 5px 50px;
+        padding: 5px;
+    }
+
+    .menu{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu a{
+        background-color: #ECDFFE;
+        font-size: 20px;
+        color: rgb(51, 50, 50);
+        border: inset rgb(247, 169, 169);
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover{
+        color: rgb(245, 184, 184);
+    }
+
+    a:active{
+        color: violet;
+    }
+
+    /* Fin Header */
+
+    /* Main */
+
+    .main-container{        
+        grid-area: main;
+        background-color: #DFE1FE;        
+        border-radius: 2%; 
+        margin: 10px ;
+    }
+    
+    .article-container{
+        background-color: rgb(245, 235, 235);
+        padding: 5px 10px 5px 5px;
+        margin: 20px 15px 10px 15px;
+        border-radius: 20PX; 
+    }
+
+    .section-container img {
+        width:33.3%;
+        height: auto;             
+    }
+
+    .div-images{
+        display: flex;    
+        justify-content: center;                 
+    }    
+
+    .section-container h2{
+        color: #F82331;
+        margin: 5px 5px 10px 5px;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .section-container p{
+        color: rgb(49, 48, 48);
+        font-size: 30px;
+        text-align: justify;
+    }
+
+    .article-container h3{
+        color: #ac76f8;
+        text-align: center;
+        font-size: 35px;
+        margin: 15px 0 15px 0;
+    }
+    
+    .article-container h4{
+        color: #b990f3;
+        text-align: start;
+        font-size: 25px;
+        margin: 15px 0 15px 50px;    
+    }
+    
+    .ul-container li{
+        list-style: circle;
+        margin: 15px 0 15px 20px;
+        color: rgb(116, 115, 115); 
+        font-size: x-large; 
+    }
+    
+    .div-main-container-images{
+        margin: 30px 10px 30px 200px;   
+    }
+   
+    .consult a{
+        text-decoration: none;  
+        text-align: center;
+        font-size: xx-large;
+        color: #7922f3;
+    }
+    
+    a:hover{
+        color: rgb(245, 184, 184);
+    }
+        
+    a:active{
+        color: violet;
+    }
+    
+    .form-container{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;     
+    }
+    
+    .form-container label{
+        color: #7922f3;    
+    }
+    
+    .input{
+        background-color: blue;
+        color: white;
+    }
+    
+
+    /* Fin Main */
+
+    /* Footer */
+
+.footer-container{
+    background-color: #021226;       
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 3rem; 
+    color: #fff;   
+    display: grid;  
+    grid-area: footer;
+    display: flex;
+}
+
+.footer-container img{
+    width: 50px;
+    height: auto;
+    justify-content: space-between;
+    margin: 10px 40px 10px 20px;
+    padding: 10px 40px 10px 20px; 
+    display: block;   
+}
+
+.footer-container a p{
+    color: white;
+    float: left;
+    font-size: 20px;
+    justify-content: center;
+    background-color: rgb(75, 60, 100);
+    border-radius: 5px;
+    border:  2px inset rgb(11, 0, 36);  
+}
+
+.map-container{
+    display: flex;
+    align-items: center;   
+}
+
+/* Fin Footer */
+
+
+/*---------------------------------- Fin Mobile -------------------------------------*/
+
+/*---------------------------------- Tablet -----------------------------------------*/
+
+@media (min-width:451px){
+
+/* Body */ 
+
+.grid-container{     
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 260px auto ;
+    grid-template-areas: 
+        "header"     
+        "main"
+        "footer";                                          ;
+}
+
+/* Fin Body */
+
+.header-container{
+    border-radius: 5px;
+    border-width:7px ;
+    grid-area: header; 
+    -webkit-box-shadow: 34px 42px 68px -39px rgba(69,50,69,1);
+    -moz-box-shadow: 34px 42px 68px -39px rgba(69,50,69,1);
+    box-shadow: 34px 42px 68px -39px rgba(69,50,69,1); 
+}
+
+}
+
+/*--------------------------------- Fin Tablet --------------------------------------*/
+
+/*--------------------------------- Deshstop ----------------------------------------*/
+
+@media (min-width: 960px){
+
+    .grid-container{     
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 260px auto ;
+        grid-template-areas: 
+            "header header header"     
+            "main main main"
+            "footer footer footer";                                          ;
+    }
+
+    .header-container{
+        border-radius: 5px;
+        border-width:7px ;
+        grid-area: header; 
+        -webkit-box-shadow: 34px 42px 68px -39px rgba(69,50,69,1);
+        -moz-box-shadow: 34px 42px 68px -39px rgba(69,50,69,1);
+        box-shadow: 34px 42px 68px -39px rgba(69,50,69,1);
+    }   
+}
+
+/*-------------------------------- Fin Deshstop -------------------------------------*/
