@@ -77,16 +77,18 @@ html {
 .menu a {
     background-color: #ECDFFE;
     font-size: 20px;
-    color: rgb(51, 50, 50);
-    border: inset rgb(177, 174, 174);
+    color: rgb(146, 94, 118);    
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    background-image: linear-gradient(to top, #31b1a8, #DFFEFC);
+    background-image: linear-gradient(to top, #31b1a8, #DFFEFC);  
+    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);  
 }
 
 a:hover {
-    color: rgb(245, 184, 184);
+    color: rgb(245, 184, 184);   
 }
 
 a:active {
@@ -102,6 +104,9 @@ a:active {
     border-radius: 2%;
     margin: 10px;
     background-image: linear-gradient(to bottom, #DFE1FE, #8d8ea0);
+    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
 }
 
 .article-container {
@@ -169,12 +174,14 @@ a:active {
     color: #7922f3;
 }
 
-a:hover {
-    color: rgb(245, 184, 184);
-}
+.consult:hover{
+    transform: scale(1.25);    
+    transition: all 1.25s ;    
+} 
 
-a:active {
-    color: violet;
+a:hover {
+    color: rgb(245, 184, 184);   
+    transition: all 0.5s;
 }
 
 .form-container {
@@ -192,6 +199,10 @@ a:active {
     color: white;
 }
 
+.input:hover{
+    transform: scale(1.05);    
+    transition: all 1s ;
+}
 
 /* Fin Main */
 
@@ -215,7 +226,11 @@ a:active {
     justify-content: space-between;
     margin: 10px 40px 10px 20px;
     padding: 10px 40px 10px 20px;
-    display: block;
+    display: block;     
+}
+.footer-container img:hover{
+    transform: scale(1.25);    
+    transition: all 1s ; 
 }
 
 .footer-container a p {
